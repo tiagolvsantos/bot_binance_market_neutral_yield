@@ -1,7 +1,5 @@
 import ccxt
 import json
-import time
-
 
 #####################################################
 symbol="BTC/USDT"
@@ -43,5 +41,4 @@ try:
         binance_futures.fetch_orders(symbol)
 except Exception as e:
     print(e)
-    time.sleep(60)
 
